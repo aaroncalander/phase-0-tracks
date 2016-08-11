@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form practice</title>
+</head>
+<body>
+	<form action="success.html" method="post">
+		<fieldset>
+		<div>
+			<label>First Name:</label>
+			<input type="text" name="first name">
+		</div>
+		<div>
+			<label>Hometown:</label>
+			<input type="text" name="hometown">
+		</div>
+		<div>
+			<label>Favorite Hobby:</label>
+			<input type="text" name="favorite hobby">
+		</div>
+		</fieldset>
+		<fieldset>
+			<div>
+			<label>Favorite California City:</label>
+			<select name="city">
+				<option value="specific city">San Francisco</option>
+				<option value="specific city">Los Angeles</option>
+				<option value="specific city">San Diego</option>
+				<option value="specific city">Sacramento</option>
+				<option value="specific city">San Jose</option>
+			</select>
+				<br>
+				<br>
+				<label>Why is this your favorite city?</label>
+				<br>
+				<br>
+				<textarea name="textarea" rows="10" cols="30"></textarea>
+		</div>
+		</fieldset>
+		<fieldset>
+			<div>
+				<label>Do you plan to visit this year?</label>
+				<br>
+				<br>
+				<input type="radio" name="visiting" value="yes"> Yes<br>
+				<input type="radio" name="visiting" value="no"> No<br>
+			</div>
+			<div>
+				<br>
+				<br>
+				<label>If yes, what month are you planning on visiting?</label>
+				<br>
+				<br>
+				<input type="month" name="month" value="month">
+			</div>
+			<div>
+				<br>
+				<br>
+				<label>How do you plan to get there?</label>
+					<input type="checkbox" name="transportation" value="car"> Car
+					<input type="checkbox" name="transportation" value="plane"> Plane
+					<input type="checkbox" name="transportation" value="train"> Train
+			</div>
+		</fieldset>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
