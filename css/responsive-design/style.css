@@ -3,98 +3,53 @@ body {
  }
 
 blockquote {
-<<<<<<< HEAD
- border-left: 5px solid blue;
- padding: 15px;
- margin-left: 0px;
- width:80%;
- max-width:756px;
-=======
   border-left: 5px solid blue;
-  padding: 15px;
-  margin-left: 0px;
-  width:80%;
-  max-width:756px;
->>>>>>> css-responsive-design
+  padding: 15px;
+  margin-left: 0px;
+  width: 80%;
+  max-width: 756px;
 }
 
 cite {
- display: block;
- margin-top: 10px;
+  display: block;
+  margin-top: 10px;
 }
 
-#external-links ul {
-<<<<<<< HEAD
- list-style-type: none;
- padding-left: 0px;
-
-}
-#external-links {
- max-width:200px;
- width:20%;
- float:left;
-}
-
-
-body {
- max-width:960px;
- 
-
-}
 main {
- max-width: 756px;
- width:80%;
- float:right;
-
-=======
-  list-style-type: none;
-  padding-left: 0px;
-
-}
-#external-links {
   display: inline-block;
-  vertical-align: top;
-  max-width:200px;
-  min-width: 100px;
-  width:20%;
+  width: 70%;
   padding: 5px;
 }
 
-main {
-  max-width: 756px;
-  width: 80%;
-  float: right;
->>>>>>> css-responsive-design
+#external-links ul {
+  list-style-type: none;
+  padding-left: 0px;
 }
+
+#external-links {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 200px;
+  min-width: 100px;
+  width: 20%;
+  padding: 5px;
+}
+
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
 img {
-
-<<<<<<< HEAD
- width:100%;
-=======
   width:100%;
->>>>>>> css-responsive-design
 }
 
 figure {
- margin-left: 0px;
- margin-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 figcaption {
- font-style: italic;
- text-align: right;
-}
-/*@media screen and (max-width: 500px) {
- body {
-   background-color: hotpink;
- }
-}*/
-@media screen and (min-width: 500px) {
- 
- 
+  font-style: italic;
+  text-align: right;
 }
 
 /*@media screen and (max-width: 500px) {
@@ -105,7 +60,7 @@ figcaption {
 
 @media screen and (min-width: 500px) {
   blockquote {
-    font-size: 20pt
+    font-size: 20pt;
   }
 }
 
