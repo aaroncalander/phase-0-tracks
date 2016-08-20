@@ -1,9 +1,21 @@
+body {
+  max-width: 960px;
+ }
+
 blockquote {
+<<<<<<< HEAD
  border-left: 5px solid blue;
  padding: 15px;
  margin-left: 0px;
  width:80%;
  max-width:756px;
+=======
+  border-left: 5px solid blue;
+  padding: 15px;
+  margin-left: 0px;
+  width:80%;
+  max-width:756px;
+>>>>>>> css-responsive-design
 }
 
 cite {
@@ -12,6 +24,7 @@ cite {
 }
 
 #external-links ul {
+<<<<<<< HEAD
  list-style-type: none;
  padding-left: 0px;
 
@@ -33,13 +46,36 @@ main {
  width:80%;
  float:right;
 
+=======
+  list-style-type: none;
+  padding-left: 0px;
+
+}
+#external-links {
+  display: inline-block;
+  vertical-align: top;
+  max-width:200px;
+  min-width: 100px;
+  width:20%;
+  padding: 5px;
+}
+
+main {
+  max-width: 756px;
+  width: 80%;
+  float: right;
+>>>>>>> css-responsive-design
 }
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
 img {
 
+<<<<<<< HEAD
  width:100%;
+=======
+  width:100%;
+>>>>>>> css-responsive-design
 }
 
 figure {
@@ -59,4 +95,24 @@ figcaption {
 @media screen and (min-width: 500px) {
  
  
+}
+
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}*/
+
+@media screen and (min-width: 500px) {
+  blockquote {
+    font-size: 20pt
+  }
+}
+
+@media screen and (max-width: 500px) {
+  figure {
+    float: top;
+    margin-right: 100px;
+    width: auto;
+  }
 }
