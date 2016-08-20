@@ -39,7 +39,7 @@ main {
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
 img {
-  width:100%;
+  width: 100%;
 }
 
 figure {
