@@ -1,0 +1,7 @@
+fixed positioning - position: fixed; element stays in the same place even when page is scrolled through; this might be beneficial if you want some important information to remain visible or a menu.
+
+relative positioning - position: relative; allows elements to be positioned relative to their normal positions; thus, the top, right, bottom, and left properties can be adjusted away from normal (static) position.
+
+absolute positioning - position: absolute; allows elements to be positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed); if there are no positioned ancestors, it uses the document body and moves with page scrolling.
+
+z-index - The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.
