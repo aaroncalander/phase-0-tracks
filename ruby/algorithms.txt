@@ -1,0 +1,40 @@
+- Press button next to elevator one time and wait for elevator doors to open:
+	- When elevator doors open, wait for people to exit elevator and then enter elevator:
+		- If no people exit elevator, wait for two seconds and then enter elevator.
+		- If no people are detected inside elevator, enter elevator without waiting.
+	- Walk towards back wall of elevator and turn 180 degrees to face elevator doors:
+		- If 1 or more people are inside elevator, enter elevator, take one step and turn 180 degrees to face elevator doors.
+	- Wait for elevator doors to close.
+	- Locate elevator navigation panel on right side of elevator doors:
+		- If panel isn't on right side of doors, look for panel on left side of elevator doors.
+	- Elevator panel has numerical buttons in descending order from top to bottom (5,4,3,2,L) where L = 1.
+	- Each button represents a level of the building with 5 being the top level and L being the bottom level.
+	- Push the button that corresponds with the level of the building you would like to travel to.
+		- Scan the top of the elevator navigation panel as there is a display that shows which level the elevator is currently on.
+	- Do not exit the elevator until the navigation panel shows the desired number of the floor that is your destination.
+	- When elevator reaches desired floor, wait for elevator doors to open.
+		- Allow other people to exit elevator:
+			- If no one exits elevator after 2 seconds, exit elevator.
+
+Brushing your teeth algorithm
+
+- Locate toothbrush and hold in either hand with bristles facing your mouth.
+- Locate toothpaste tube on counter and turn top in counter-clockwise direction to remove cap on tube:
+	- If cap has a flip-top, find small indentation on cap and flip cap open.
+- Lift toothbrush and hold toothbrush with the head facing up:
+	- The head of the toothbrush contains hard bristles.
+- Place toothbrush directly below toothpaste tube:
+	- Gently squeeze toothpaste tube until toothbrush head is covered with a thin layer of toothpaste.
+- Place cap on toothpaste tube if it was removed:
+	- Otherwise, close flip-top on toothpaste tube.
+- Place toothpaste tube back on counter.
+- Turn water on in sink faucet and place toothbrush with toothpaste located on the toothbrush head under the running water:
+	- Continue to hold toothbrush so toothbrush head is facing up.
+- Turn off water on sink faucet.
+- Raise toothbrush so it is level with mouth.
+- Turn toothbrush so bristles on toothbrush head are facing mouth.
+- Open mouth and keep teeth together.
+- Move toothbrush head so it makes contact with front teeth.
+- Move toothbrush in a back and forth pattern moving from the front teeth to the back teeth:
+	- Once the back teeth are reached, continue movement in the opposite direction until back teeth on other side of mouth are reached.
+	- Continue this pattern of movement for two minutes.
