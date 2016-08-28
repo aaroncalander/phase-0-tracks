@@ -22,7 +22,7 @@ end
   
 if allergies == "sunshine"
   puts "Probably a vampire."
-break
+  break
 end
 
 if year + age == 2016
@@ -52,18 +52,3 @@ if employees == 0
 end
 
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
-elsif correct_age || (garlic == 'No' && insurance == 'No')
-  result = 'Almost certainly a vampire.'
-elsif name == 'Drake Cula' || name == 'Tu Fang'
-  result = 'Definitely a vampire.'
-else
-  result = 'Results inconclusive.'
-end
-
-p result
-number_employees -= 1
-
-if number_employees == 0
-    break
-  end
-end
