@@ -16,4 +16,4 @@ A commit is used when you are done adding or making changes to a branch and want
 
 * What is a merge conflict?
 
-A merge conflict can occur if two people try to commit changes in the same file.
+A merge conflict can occur if people try to commit changes in the same file.
