@@ -8,14 +8,14 @@ restaurant = {
 			 'food runners',
 			 'bussers',
 			 'bartenders'
-		]
+		],
 		areas: [
 			'entry',
 			'waiting area',
 			'restroom',
 			'bar',
 			'dining room'
-		]
+		],
 	},
 	back: {
 		section_name: 'kitchen',
@@ -26,14 +26,14 @@ restaurant = {
 			'line cook',
 			'prep cook',
 			'dishwasher'
-		]
+		],
 		areas: [
 			'prep',
 			'storage',
 			'freezer',
-			'line'
+			'line',
 			'dish'
-		]
+		],
 	},
 	management: {
 		owners: {
@@ -45,3 +45,8 @@ restaurant = {
 		supervisor: 2
 	}
 }
+
+restaurant[:front][:areas][2]
+restaurant[:management][:owners][:silent_partners]
+restaurant[:back][:employees][4]
+restaurant[:management][:supervisor]
