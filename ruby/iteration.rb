@@ -49,3 +49,53 @@ dog_demeanor = {
 dog_demeanor.each do |breed, demeanor|
 	puts "#{breed}s can be #{demeanor}"
 end
+
+# Release 2 - Question 1
+a = [92, 16, 3, 149, 0]
+
+a.delete_if {|number| number > 100}
+
+h = {
+	hours_worked: 5,
+	hours_slept: 10,
+	hours_traffic: 2,
+	hours_tv: 4,
+	hours_internet: 3
+}
+
+h.delete_if {|hours, number| number > 4}
+
+# Release 2 - Question 2
+a = [15, 7, 64, 99, -32]
+
+a.keep_if {|number| number < 0}
+
+h = {
+	a: 2.25,
+	b: 1.45,
+	c: 1.30,
+	d: 2.00
+}
+
+h.keep_if {|participant, time| time <= 1.45}
+
+# Release 3 - Question 3
+a = [88, 17, 43, 2, 261]
+
+a.select {|number| number.even?}
+
+h = {
+	first_place: "Bob",
+	second_place: "Mary",
+	third_place: "Tom",
+	fourth_place: "Jen"
+}
+
+h.select {|place, name| name > "Bob"}
+
+# Release 3 - Question 4
+a = [26, 13, 5, 101, 76]
+
+a.take_while { |int| int < 50}
+
+# no working option for a hash
