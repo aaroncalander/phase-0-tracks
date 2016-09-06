@@ -20,6 +20,10 @@ class Puppy
   def attack(name)
   	puts "I would rather just lick #{name}."
   end
+
+  def initialize
+  	puts 'Initializing new puppy instance...'
+  end
 end
 
 # Driver Code:
