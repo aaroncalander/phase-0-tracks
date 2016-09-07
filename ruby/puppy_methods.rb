@@ -34,3 +34,41 @@ lucky.speak(5)
 lucky.roll_over
 lucky.dog_years(7)
 lucky.attack('Aaron')
+
+# Design a new class with an initialize method and at least 2 other methods.
+
+class Coder
+  
+  def learn(language)
+  	puts "This week I'm going to learn #{language}."
+  end
+
+  def caffeinate(cups)
+  	puts 'Give me coffee!' * cups
+  end
+
+  def coding(hours)
+  	puts "I only have #{hours} hours left before sleepy time."
+  end
+
+  def initialize
+    puts "You are now becoming a coder..."  
+  end
+end
+
+Aaron = Coder.new
+
+Aaron.learn('html')
+Aaron.caffeinate(6)
+Aaron.coding(10)
+
+coder_array = []
+
+i = 0
+until i == 50
+  Aaron = Coder.new
+  coder_array << Aaron
+  i += 1
+end
+
+p coder_array
