@@ -6,6 +6,7 @@ class Santa
   	@ethnicity = ethnicity
   	@reindeer_ranking = ['Rudolph', 'Dasher', 'Dancer', 'Prancer', 'Vixen', 'Comet', "Cupid", 'Donner', 'Blitzen']
     @age = 0
+    puts "I am a #{gender} #{ethnicity} Santa."
   end
 
   def speak
@@ -13,11 +14,35 @@ class Santa
   end
 
   def eat_milk_and_cookies(cookie_type)
-  	puts "That was a good #{type}!"
+  	puts "That was a good #{cookie_type}!"
+  end
+
+  def celebrate_birthday(age)
+  	age += 1
+  	p age
+  end
+
+  def get_mad_at(reindeer)
+  	@reindeer_ranking.delete(reindeer)
+  	@reindeer_ranking.push(reindeer)
+  end
+
+# getter methods
+  def age
+  	@age
+  end
+
+  def ethnicity
+  	@ethnicity
+  end
+  
+# setter methods
+  def gender=(new_gender)
+	@gender = new_gender
   end
 end
 
-# Driver Code:
+# Driver Code (Release 0):
 # bad_santa = Santa.new
 
 # bad_santa.speak
@@ -34,20 +59,26 @@ end
 # santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
 # santas << Santa.new("N/A", "N/A")
 
-  
-santas = []
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+# Driver Code (Release 1): 
+# santas = []
+# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
 
-example_genders.length.times do |i|
-  santas << Santa.new(example_genders[i], example_ethnicities[i])
-  puts "There are now #{santas.length} Santas here."
-end
+# example_genders.length.times do |i|
+  # santas << Santa.new(example_genders[i], example_ethnicities[i])
+   # puts "There are now #{santas.length} Santas here."
+# end
 
-puts "Interacting with the Santas..."
-santas.each do |santa|
- santa.speak
-end
+# puts "Interacting with the Santas..."
+# santas.each do |santa|
+ # santa.speak
+# end
 
-
+# Driver Code (Release 2):
+# first_santa = Santa.new("male", "white")
+# first_santa.celebrate_birthday(80)
+# first_santa.eat_milk_and_cookies("chocolate chip cookie")
+# first_santa.get_mad_at("Vixen")
+# first_santa.gender = "female"
+# puts "I am a #{first_santa.gender} Santa."
