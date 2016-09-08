@@ -1,5 +1,8 @@
 class Santa
 
+  attr_reader :age, :ethnicity
+  attr_accessor :gender
+
   def initialize(gender, ethnicity)
   	puts "Initializing Santa instance ..."
   	@gender = gender
@@ -26,21 +29,20 @@ class Santa
   	@reindeer_ranking.delete(reindeer)
   	@reindeer_ranking.push(reindeer)
   end
-
+end
 # getter methods
-  def age
-  	@age
-  end
+  # def age
+  	# @age
+  # end
 
-  def ethnicity
-  	@ethnicity
-  end
+  # def ethnicity
+  	# @ethnicity
+  # end
   
 # setter methods
-  def gender=(new_gender)
-	@gender = new_gender
-  end
-end
+  # def gender=(new_gender)
+	# @gender = new_gender
+  # end
 
 # Driver Code (Release 0):
 # bad_santa = Santa.new
@@ -75,10 +77,10 @@ end
  # santa.speak
 # end
 
-# Driver Code (Release 2):
-# first_santa = Santa.new("male", "white")
-# first_santa.celebrate_birthday(80)
-# first_santa.eat_milk_and_cookies("chocolate chip cookie")
-# first_santa.get_mad_at("Vixen")
-# first_santa.gender = "female"
-# puts "I am a #{first_santa.gender} Santa."
+# Driver Code (Release 2 and 3):
+first_santa = Santa.new("male", "white")
+first_santa.celebrate_birthday(80)
+first_santa.eat_milk_and_cookies("chocolate chip cookie")
+first_santa.get_mad_at("Vixen")
+first_santa.gender = "female"
+puts "I am a #{first_santa.gender} Santa."
