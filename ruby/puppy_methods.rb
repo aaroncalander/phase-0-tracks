@@ -14,7 +14,7 @@ class Puppy
   end
 
   def dog_years(int)
-  	puts int * 7
+  	puts int + 7
   end
 
   def attack(name)
@@ -39,6 +39,10 @@ lucky.attack('Aaron')
 
 class Coder
   
+   def initialize
+    puts "You are now becoming a coder..."  
+  end
+  
   def learn(language)
   	puts "This week I'm going to learn #{language}."
   end
@@ -49,10 +53,6 @@ class Coder
 
   def coding(hours)
   	puts "I only have #{hours} hours left before sleepy time."
-  end
-
-  def initialize
-    puts "You are now becoming a coder..."  
   end
 end
 
@@ -66,9 +66,14 @@ coder_array = []
 
 i = 0
 until i == 50
-  Aaron = Coder.new
   coder_array << Aaron
   i += 1
 end
 
 p coder_array
+
+coder_array.each do |method|
+  Aaron.learn('Ruby')
+  Aaron.caffeinate(3)
+  Aaron.coding(12)
+end

@@ -39,7 +39,7 @@ def encrypt(x)
 end
 
 def decrypt(y)
-	alphabet = "abcdefghijklmnopqrstuvwxyz"
+	alphabet = "bcdfghjklmnpqrstvwxyz"
 	output = ""
 	index = 0
 	until index == y.length
