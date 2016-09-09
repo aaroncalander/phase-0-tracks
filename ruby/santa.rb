@@ -68,9 +68,9 @@ def create_santas(number)
   santas = []
   example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "pangender", "alien gender", "ze", "reptilian"]
   example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "unicorn", "N/A", "martian", "bush", "native", "scarecrow"]
-  age = rand(0..140)
+  example_age = [0..140]
   number.times do |i|
-    santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+    santas << Santa.new(example_age.sample, example_genders.sample, example_ethnicities.sample)
   end
   santas
 end
