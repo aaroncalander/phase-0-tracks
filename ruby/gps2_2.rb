@@ -61,3 +61,29 @@ remove_item(new_list, "lemonade")
 update_item(new_list, "ice cream", 1)
 
 print_list(new_list)
+
+# Reflections:
+#
+# I learned more about pseudocode during this challenge than any other assignment.
+# In particular, I have a better idea of how to break down a larger program into pieces and
+# include input and output for each step.
+
+# Arrays seem to have more builtin methods than hashes but aren't ideal
+# for the item/quantity design of a grocery list.
+
+# A method doesn't necessarily return anything unless you explicitly
+# ask it to return something?
+
+# You can pass things like strings, integers, floats, booleans, etc.
+
+# You can pass information between methods by creating variables in your driver code.
+# In this particular assignment, we were able to pass information from
+# our initial create_list method to the other methods by setting the
+# variable new_list.
+
+# The concept of passing information between methods was largely solidified
+# during this challenge. The pseudocoding was also a big leap forward. 
+# I am still struggling a bit with iteration and using proper syntax.
+# I would also say that it is also difficult sometimes to move from
+# pseudocoding to actual coding. The question of where to start
+# can still be confusing at times.
