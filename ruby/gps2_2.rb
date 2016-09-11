@@ -28,17 +28,29 @@
 # steps: use .each to print a more readable string with items and quantities
 # output: pretty list
 
-def create(list_items)
-  list_array = list_items.split(" ")
+def create_list(items)
+  list_array = items.split(" ")
   list_hash = {}
   list_array.each {|i| list_hash[i] = 1}
   p list_hash
 end
 
-def add_item(new_hash, item, quantity)
-  new_hash.merge!({item => quantity})
+def add_item(list, item, quantity)
+  list.merge!({item => quantity})
 end
 
-new_list = create("carrots apples cereal pizza")
+def remove_item(list, item)
+  list.delete(item)
+end
+
+def update_item(list, item, quantity)
+  list[item] = quantity
+end
+# Driver Code:
+new_list = create_list("carrots apples cereal pizza")
 add_item(new_list, "chips", 3)
+p new_list
+remove_item(new_list, "pizza")
+p new_list
+update_item(new_list, "chips", 2)
 p new_list
