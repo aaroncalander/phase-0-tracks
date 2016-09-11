@@ -46,11 +46,18 @@ end
 def update_item(list, item, quantity)
   list[item] = quantity
 end
+
+def print_list(list)
+  list.each {|key, value| puts "Item: #{key} => Quantity: #{value}"}
+end
+
 # Driver Code:
 new_list = create_list("carrots apples cereal pizza")
-add_item(new_list, "chips", 3)
-p new_list
-remove_item(new_list, "pizza")
-p new_list
-update_item(new_list, "chips", 2)
-p new_list
+add_item(new_list, "lemonade", 2)
+add_item(new_list, "tomatoes", 3)
+add_item(new_list, "onions", 1)
+add_item(new_list, "ice cream", 4)
+remove_item(new_list, "lemonade")
+update_item(new_list, "ice cream", 1)
+
+print_list(new_list)
