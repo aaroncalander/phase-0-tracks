@@ -1,0 +1,35 @@
+section#contact-info {
+	font-size: .8em;
+}
+
+.job {p
+	background-color: #e9e5dc;
+	border-radius: 10px;
+	padding-left: 15px;
+	padding-top: .01px;
+	padding-bottom: .01px;
+}
+
+.experiences {
+	font-size: .8em;
+}
+
+/* Cascading in CSS means you can have several different stylesheets that move from more general to more specific selector rules. */
+
+/* pseudoselector definition: Pseudo classes are bolted on to selectors to specify a state or relation to the selector. They take the form of selector:pseudo_class { property: value; }, simply with a colon in between the selector and the pseudo class.
+
+;
+
+Pseudoselector Rule:
+
+; a:link {
+	color: blue;
+}*/
+
+/* http://www.htmldog.com/guides/css/intermediate/pseudoclasses/
+https://css-tricks.com/pseudo-class-selectors/ */
+
+/* div > p { 
+    background-color: yellow;
+} */
+
