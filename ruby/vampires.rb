@@ -1,7 +1,9 @@
 puts 'How many employees will be processed?'
   employees = gets.chomp.to_i
 
-loop do
+while employees >= 1
+  employees -= 1
+
   puts 'What is your name?'
     name = gets.chomp
   puts 'How old are you?'
@@ -22,7 +24,7 @@ end
   
 if allergies == "sunshine"
   puts "Probably a vampire."
-  break
+  next
 end
 
 if year + age == 2016
@@ -31,24 +33,18 @@ else
   correct_age = false
 end
 
-if correct_age && (garlic == 'Yes' || insurance == 'Yes')
-  result = 'Probably not a vampire.'
-elsif correct_age && (garlic == 'Yes' || insurance == 'Yes')
+if correct_age == true && garlic == 'yes' || insurance == 'yes'
+  result = 'Probably not a vampire.' 
+elsif !correct_age == true && garlic == 'yes' || insurance == 'yes'
   result = 'Probably a vampire.'
-elsif correct_age || (garlic == 'No' && insurance == 'No')
+elsif !correct_age == true && garlic == 'no' && insurance == 'no'
   result = 'Almost certainly a vampire.'
-elsif name == 'Drake Cula' || name == 'Tu Fang'
+elsif name == 'drake cula' || name == 'tu fang'
   result = 'Definitely a vampire.'
 else
-  result = 'Results inconclusive.'
+  'Results inconclusive.'
 end
-
-p result
-employees -= 1
-
-if employees == 0
-    break
-  end
+  puts result
 end
 
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
