@@ -12,8 +12,8 @@ A branch is created when any change is made to the master repository and/or sour
 
 * What is a commit? What makes a good commit message?
 
-A commit is used when you are done adding or making changes to a branch and want to save it to the original repository. A good commit message explains in simple language what changes were made.
+A commit is used when you are done adding or making changes to a branch and want to save it to the original repository. A great commit message explains in simple language what changes were made.
 
 * What is a merge conflict?
 
-A merge conflict can occur if two people try to commit changes in the same file.
+A merge conflict can occur if people try to commit changes in the same file.
