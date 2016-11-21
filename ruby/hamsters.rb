@@ -1,34 +1,23 @@
-puts "Hamster Name?"
-name = gets.chomp
-volumeLevel = 0
-until (volumeLevel >=1 && volumeLevel <=10)
-	puts "Please Input Volume Level from 1 to 10"
-	volumeLevel = gets.chomp.to_i
+puts "what is the hamster's name?"
+hamster_name = gets.chomp
+puts "enter the hamster's volume level from 1-10"
+volume_level = gets.chomp.to_i
+puts "what is the hamster's fur color?"
+fur_color = gets.chomp
+puts "it's a good candidate for adoption? (yes/no)"
+adoptable = gets.chomp
+if adoptable == "yes"
+	adoptable = true
+else adoptable = false	
 end
-puts "Fur Color"
-color = gets.chomp
-
-puts "Is The Hamster a good candidate for adoption? Yes or No?"
-candidate = gets.chomp
-if candidate.downcase == "yes"
-	candidateBool = true
-else candidateBool = false
-end
-
-
-puts "Estimated Age of Hamster"
-age = gets.chomp.to_f
-if age == 0.0
-	age = nil
-end
-
-
-puts "Hamster Name: #{name}"
-if age == nil
-	puts "Age: Nil"
-else
-puts "Age: #{age}"
-end
-puts "Volume Level: #{volumeLevel}"
-puts "Fur Color: #{color}"
-puts "Good Candidate: #{candidateBool}"
+puts "what is the estimated age?"
+age = gets.chomp.to_i
+if age == ""
+		age = nil
+end 
+ 
+puts "Hamster #{hamster_name} was checked in today."
+puts "We estimate it's age to be #{age}."
+puts "We'd rate it a #{volume_level} out of 10 for loudness."
+puts "The coat on this furry beast is #{fur_color}."
+puts "Good candidate for adoption: #{adoptable}"
