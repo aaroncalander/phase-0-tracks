@@ -1,53 +1,32 @@
-# Have user enter first and last name.
-# Swap the first name with the last name.
-# Change all of the vowels in the name to the next vowel 
-# in 'aeiou' and all the consonants to the next consonant.
-#
-#
-#
-#
-#
-#
-#
+# Pseudocode:
 
-puts "Please enter your first and last name."
-  input = gets.chomp.downcase
-  name = input.split(' ')
-  reverse_name = name.join('')
-  reverse_name.tr('aeiou', 'eioua')
-  reverse_name.tr('bcdfghjklmnpqrstvwxyz', 'cdfghjklmnpqrstvwxyzb')
-  reverse_name.capitalize
+# Have user enter first and last name.
+# Downcase characters to handle user input.
+# Swap the first name with the last name.
+# Change all of the vowels in the name to the next vowel in alphabet.
+# Change all the consonants to the next consonant in the alphabet.
 
 def name_swap(name)
-name.split.reverse.join('')
+  reverse_name = name.downcase.split.reverse.join(' ')
+  vowel_swap = reverse_name.tr!('aeiou', 'eioua')
+  consonant_swap = vowel_swap.tr!('bcdfghjklmnpqrstvwxyz', 'cdfghjklmnpqrstvwxyz').split
+  final_alias = consonant_swap.map(&:capitalize).join(' ')
 end
 
-p name_swap('Aaron Calander')
-
-def consonant_swap(name)
-  name = []
-  name.split('').map! do |letter|
-  consonants = "bcdfghjklmnpqrstvwxyz"
-  index = consonants.index
-    if letter == consonants[consonants_index.to_i]
-    letter = consonants[consonants_index + 1]
+alias_array = []
+spy_name = ''
+until spy_name == 'quit'
+  puts "Greetings spy. Please enter your first and last name and we will provide a fake name. Enter 'quit' when you are ready to exit."
+  spy_name = gets.chomp
+  
+  if spy_name == 'quit'
+  puts "Thank you and be safe!"
+  next
+  end
+  alias_array << spy_name
+  p name_swap(spy_name)
 end
- +    # if letter == ("aeiou"[0])
- +    #   letter.sub!(/aeiou/, /eioua/)
- +    # end
- +    # 
- +    # 
- +    # vowels = "aeiou"
- +    # index = 0
- +    # while index < consonants.length
- +    #     if (letter == consonants[index])
- +    #       letter = consonants[index].next
- +    #   #   # elsif (name[letter] == vowels[letter]) 
- +    #   #   #   name[vowels.next] 
- +    #     end
- +    #   letter.length += 1
- +    # end
- +  end
- +end
- +
- +p next_letter("sheri bolling")
+
+alias_array.each do |name|
+  p "#{name} is also known as #{name_swap(name)}."
+end
