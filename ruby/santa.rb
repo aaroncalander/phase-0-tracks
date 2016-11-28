@@ -31,6 +31,7 @@ class Santa
   def get_mad_at(reindeer)
   	@reindeer_ranking.delete(reindeer)
   	@reindeer_ranking.push(reindeer)
+    p @reindeer_ranking
   end
 end
 # getter methods
@@ -48,10 +49,10 @@ end
   # end
 
 # Driver Code (Release 0):
-# bad_santa = Santa.new
 
-# bad_santa.speak
-# bad_santa.eat_milk_and_cookies('Fig Newton')
+bad_santa = Santa.new('male', 'white')
+bad_santa.speak
+bad_santa.eat_milk_and_cookies('Fig Newton')
 
 # Sample initialization code:
 
@@ -64,34 +65,33 @@ end
 # santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
 # santas << Santa.new("N/A", "N/A")
 
-def create_santas(number)
-  santas = []
-  example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "pangender", "alien gender", "ze", "reptilian"]
-  example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "unicorn", "N/A", "martian", "bush", "native", "scarecrow"]
-  example_age = [0..140]
-  number.times do |i|
-    santas << Santa.new(example_age.sample, example_genders.sample, example_ethnicities.sample)
-  end
-  santas
+# Driver Code (Release 1):
+
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "pangender", "alien gender", "ze", "reptilian"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "unicorn", "N/A", "martian", "bush", "native", "scarecrow"]
+
+example_genders.length.times do |i|
+  santas << Santa.new(example_genders[i], example_ethnicities[i])
+  puts "There are now #{santas.length} Santas here."
 end
 
-create_santas(100)
-# Array Loop:
-
-# example_genders.length.times do |i|
-#  santas << Santa.new(example_genders[i], example_ethnicities[i])
-#    puts "There are now #{santas.length} Santas here."
-# end
-
-# puts "Interacting with the Santas..."
-# santas.each do |santa|
- # santa.speak
-# end
-
 # Driver Code (Release 2 and 3):
-# first_santa = Santa.new("male", "white")
-# first_santa.celebrate_birthday(80)
-# first_santa.eat_milk_and_cookies("chocolate chip cookie")
-# first_santa.get_mad_at("Vixen")
-# first_santa.gender = "female"
-# puts "I am a #{first_santa.gender} Santa."
+
+first_santa = Santa.new("male", "white")
+first_santa.celebrate_birthday(80)
+first_santa.eat_milk_and_cookies("chocolate chip cookie")
+first_santa.get_mad_at("Vixen")
+first_santa.gender = "female"
+puts "I am a #{first_santa.gender} Santa."
+
+# Driver Code (Release 4):
+
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "pangender", "alien gender", "ze", "reptilian"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "unicorn", "N/A", "martian", "bush", "native", "scarecrow"]
+
+100.times do
+  santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+  puts "There are now #{santas.length} Santas here."
+end
