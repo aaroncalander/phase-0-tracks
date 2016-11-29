@@ -14,6 +14,7 @@
 # p Shout.yelling_happily("You make me so happy")
 
 # Mixin module:
+# (doesn't use keyword 'self,' also requires 'include' and name of module)
 
 module Shout
   def yell_angrily(words)
