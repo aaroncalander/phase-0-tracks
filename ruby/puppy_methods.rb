@@ -1,5 +1,9 @@
 class Puppy
 
+  def initialize
+    puts 'Initializing new puppy instance...'
+  end
+  
   def fetch(toy)
     puts "I brought back the #{toy}!"
     toy
@@ -14,15 +18,11 @@ class Puppy
   end
 
   def dog_years(int)
-  	puts int + 7
+  	puts int * 7
   end
 
   def attack(name)
   	puts "I would rather just lick #{name}."
-  end
-
-  def initialize
-  	puts 'Initializing new puppy instance...'
   end
 end
 
