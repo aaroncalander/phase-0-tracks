@@ -33,3 +33,8 @@ var Prius = new Car(2011, "Toyota", "Prius");
 console.log(Prius);
 Prius.honk();
 
+// Release 3
+
+// for (var prop in Prius) {
+//   console.log("Prius" + prop + " = " + Prius[prop]);
+// }
