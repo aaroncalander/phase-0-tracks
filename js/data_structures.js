@@ -1,4 +1,4 @@
-// Release 0
+// Release 0 and 1
 
 var colors = ["blue", "red", "green", "yellow"];
 var names = ["Ed", "Chuck", "Harry", "Lucky"];
@@ -16,3 +16,20 @@ for (var i = 0; i < names.length; i++) {
 }
 
 console.log(horse_colors);
+
+// Release 2
+
+function Car(year, make, model) {
+  this.year = year;
+  this.make = make;
+  this.model = model;
+  this.honk = function() {
+  	console.log("Honk! Honk!")
+  }
+}
+
+var Jetta = new Car(2016, "VW", "Jetta");
+var Prius = new Car(2011, "Toyota", "Prius");
+console.log(Prius);
+Prius.honk();
+
