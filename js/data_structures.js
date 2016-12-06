@@ -8,3 +8,11 @@ names.push("Charlie");
 
 console.log(colors);
 console.log(names);
+
+var horse_colors = {};
+
+for (var i = 0; i < names.length; i++) {
+  horse_colors[names[i]] = colors[i];
+}
+
+console.log(horse_colors);
