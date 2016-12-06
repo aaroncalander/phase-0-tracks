@@ -1,10 +1,15 @@
 // Reverse Function PSEUDOCODE
 
 // INPUT: string
+
 // STEPS: 
 //  - create a function that takes a string as a parameter
 //  - the function will reverse the order of the characters in the string
 //    (i.e. reverse("hello") should return "olleh")
+//  - convert string to array
+//  - reverse order of array using built-in method
+//  - convert array back to string
+
 // OUTPUT: string in reverse order
 
 function reverse(string) {
