@@ -1,0 +1,49 @@
+1)
+
+Command: SELECT * FROM rockstars;
+
+Output: 1|Mick Jagger|false|73|360000000|1
+2|Robert Plant|false|68|170000000|2
+3|Keith Richards|true|72|340000000|1
+4|Jimmy Page|false|72|170000000|2
+5|Gene Simmons|true|67|300000000|3
+6|Paul Stanley|true|64|125000000|3
+
+2) 
+
+Command: UPDATE rockstars SET net_worth=165000000 WHERE name="Jimmy Page";
+
+3) 
+
+Command: SELECT * FROM rockstars, bands WHERE rockstars.band_id = bands.id;
+
+Output: 1|Mick Jagger|false|73|360000000|1|1|The Rolling Stones
+2|Robert Plant|false|68|170000000|2|2|Led Zeppelin
+3|Keith Richards|true|72|340000000|1|1|The Rolling Stones
+4|Jimmy Page|false|72|165000000|2|2|Led Zeppelin
+5|Gene Simmons|true|67|300000000|3|3|Kiss
+6|Paul Stanley|true|64|125000000|3|3|Kiss
+
+4)
+
+Command: SELECT rockstars.name, bands.band FROM rockstars JOIN bands On rockstars.band_id = bands.id;
+
+Output: Mick Jagger|The Rolling Stones
+Robert Plant|Led Zeppelin
+Keith Richards|The Rolling Stones
+Jimmy Page|Led Zeppelin
+Gene Simmons|Kiss
+Paul Stanley|Kiss
+
+5) 
+
+Command: DELETE FROM rockstars WHERE name="Paul Stanley";
+         SELECT * FROM rockstars;
+
+Output: 1|Mick Jagger|false|73|360000000|1
+2|Robert Plant|false|68|170000000|2
+3|Keith Richards|true|72|340000000|1
+4|Jimmy Page|false|72|165000000|2
+5|Gene Simmons|true|67|300000000|3
+
+
