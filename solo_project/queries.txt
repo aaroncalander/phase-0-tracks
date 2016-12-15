@@ -1,3 +1,5 @@
+Release 2
+
 1)
 
 Command: SELECT * FROM rockstars;
@@ -46,4 +48,32 @@ Output: 1|Mick Jagger|false|73|360000000|1
 4|Jimmy Page|false|72|165000000|2
 5|Gene Simmons|true|67|300000000|3
 
+Release 3
 
+1) Join Types - inner join, left join, right join, full join, self join, cartesian join
+
+http://www.sql-join.com/sql-join-types/
+https://www.tutorialspoint.com/sql/sql-using-joins.htm
+http://www.w3schools.com/sql/sql_join.asp
+
+2) 
+
+Inner Join:
+
+Command: SELECT name, age FROM rockstars INNER JOIN bands ON rockstars.band_id = bands.id;
+
+Output: Mick Jagger|73
+Robert Plant|68
+Keith Richards|72
+Jimmy Page|72
+Gene Simmons|67
+
+Full Join:
+
+Command: SELECT rockstars.name, rockstars.age, rockstars.net_worth, bands.band FROM rockstars JOIN bands ON rockstars.band_id = bands.id;
+
+Output: Mick Jagger|73|360000000|The Rolling Stones
+Robert Plant|68|170000000|Led Zeppelin
+Keith Richards|72|340000000|The Rolling Stones
+Jimmy Page|72|165000000|Led Zeppelin
+Gene Simmons|67|300000000|Kiss
