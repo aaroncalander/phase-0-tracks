@@ -1,0 +1,11 @@
+Release 2
+
+Query: SELECT first_name, last_name, name, stars, comment FROM users INNER JOIN reviews ON reviews.user_id = users.user_id INNER JOIN businesses ON businesses.id = reviews.business_id;
+
+Output: Bradford|Pitt|Lotus Yoga|4|great workout!
+        Angela|Jolie|Sushi World|2|great fish!
+        Holly|Berry|Plumbing by Janet|5|amazing plumbing!
+
+Query: SELECT first_name, last_name, name, stars, comment FROM users INNER JOIN reviews ON reviews.user_id = users.user_id INNER JOIN businesses ON businesses.id = reviews.business_id WHERE businesses.name="Lotus Yoga";
+
+Output: Bradford|Pitt|Lotus Yoga|4|great workout!
