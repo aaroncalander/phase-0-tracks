@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Beer Tasting For Beginners</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("p").click(function(){
+				$(this).hide();
+			});
+
+			$("input").focus(function(){
+				$(this).css("background-color", "#F4D03F");
+			});
+
+			$("input").blur(function(){
+				$(this).css("background-color", "#E74C3C");
+			});
+
+			$("h1").click(function(){
+    			$("#main").fadeOut(5000);
+			});
+		});
+	</script>
+<header>
+	<h1 id="main">The Beer Taster's Career Path</h1>
+		<img src="aaroncalander.github.io/glassofbeer-sample.jpeg" alt="beer here" class="images" id="image1">
+		<p>If you like to drink beer and identify as a <a href="http://www.todayifoundout.com/index.php/2010/06/how-to-tell-if-you-are-a-supertaster/" target="_blank">supertaster</a>, you might be ready to take the next step as a professional beer taster.
+		</p>
+	<h3>Beer Taster Requirements</h3>
+		<ul class="lists">
+			<li>functioning taste buds</li>
+			<li>knowledge of brewing process</li>
+			<li>ability to discern identifying characteristics of beer as well as different textures and aromas</li>
+			<li>attention to detail as you will often also be a beer quality technician</li>
+		</ul>
+	<h3>Bad Qualities for a Beer Taster</h3>
+		<ol class="lists">
+			<li>alcohol addiction</li>
+			<li>bad organizational skills</li>
+			<li>drinking and driving</li>
+			<li>think beer is for losers and slobs</li>
+		</ol>
+		<img src="aaroncalander.github.io/drunkcrossing.jpeg" alt="drunk sign" class="images">
+		<p>To learn more about basic varieties of beer, click <a href="beer-varieties.html"> here</a>
+		</p>
+		<p>Fill out this form if you are ready to get started today</p>
+		<form action="success.html" method="post">
+			<fieldset>
+				<legend>Your Details</legend>
+				<br>
+					<label>First Name:</label>
+						<input type="text" name="firstname">
+						<br>
+					<label>Last Name:</label>
+						<input type="text" name="lastname">
+						<br>
+					<label>Address:</label>
+						<input type="text" name="address">
+			</fieldset>
+			<br>
+			<br>
+			<fieldset>
+				<div>
+				<label>Explain why you want to be a beer taster</label>
+				<br>
+				<br>
+				<textarea name="textarea" rows="10" cols="40" placeholder="Explain yourself here">Explain yourself here</textarea>
+				<br>
+				<button type="submit">Submit</button>
+				</div>
+			</fieldset>
+		</form>
+		<h3>Additional Resource:</h3>
+			<a href="http://www.insidejobs.com/careers/professional-beer-taster" target="_blank">More on becoming a beer taster.</a>
+		<p>This website gives a good overview on what you need to become a beer taster and what the job truly entails. Although I don't find the layout of the page to be very appealing or clear, it does have some good links to beer tasting certificate programs as well as a few related jobs. Overall, I am not very impressed with this website.
+		</p>
+
+</header>
+</body>
+</html>
