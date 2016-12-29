@@ -17,6 +17,15 @@ get '/students/new' do
   erb :new_student
 end
 
+get '/campus/search' do
+  @students_SF = db.execute("SELECT * FROM students WHERE campus='SF'")
+  @students_SD = db.execute("SELECT * FROM students WHERE campus='SD'")
+  @students_NYC = db.execute("SELECT * FROM students WHERE campus='NYC'")
+  @students_SEA = db.execute("SELECT * FROM students WHERE campus='SEA'")
+  @students_CHI = db.execute("SELECT * FROM students WHERE campus='CHI'")
+  erb :campus_search
+end
+
 # create new students via
 # a form
 post '/students' do
