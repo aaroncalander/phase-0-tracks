@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search a Campus</title>
+</head>
+<body>
+	<h1>Campus Search</h1>
+	<p>Here is a list of students for each campus.</p>
+	<p><%= "Here are the students attending #{@students_SF[0]['campus']}: " %></p>
+		<ul>
+    	<% @students_SF.each do |campus| %>
+      		<li><%= campus['name']%></li>
+    	<% end %>
+  	</ul>
+  	<p><%= "Here are the students attending #{@students_SD[0]['campus']}: " %></p>
+		<ul>
+    	<% @students_SD.each do |campus| %>
+      		<li><%= campus['name']%></li>
+    	<% end %>
+  	</ul>
+  	<p><%= "Here are the students attending #{@students_NYC[0]['campus']}: " %></p>
+		<ul>
+    	<% @students_NYC.each do |campus| %>
+      		<li><%= campus['name']%></li>
+    	<% end %>
+  	</ul>
+  	<p><%= "Here are the students attending #{@students_SEA[0]['campus']}: " %></p>
+		<ul>
+    	<% @students_SEA.each do |campus| %>
+      		<li><%= campus['name']%></li>
+    	<% end %>
+  	</ul>
+  	<p><%= "Here are the students attending #{@students_CHI[0]['campus']}: " %></p>
+		<ul>
+    	<% @students_CHI.each do |campus| %>
+      		<li><%= campus['name']%></li>
+    	<% end %>
+  	</ul>
+</body>
+</html>
